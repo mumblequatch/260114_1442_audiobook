@@ -49,6 +49,7 @@
         .character + .parenthetical { page-break-before: avoid; margin-top: 0; }
         .character + .dialogue { page-break-before: avoid; margin-top: 0; }
         .parenthetical + .dialogue { margin-top: 0; page-break-before: avoid; }
+        .dialogue + .parenthetical { margin-top: -0.23in; }
         @media print {
             html { background: white; }
             body { margin: 0; max-width: none; }
@@ -81,6 +82,9 @@
                 margin-right: 2em;
                 text-align: center;
                 margin-bottom: 0;
+            }
+            .dialogue + .parenthetical {
+                margin-top: -1em;
             }
         }
     </style>
