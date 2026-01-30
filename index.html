@@ -46,8 +46,8 @@
             margin-right: 1.9in;
             margin-bottom: 0;
         }
-        .character + .parenthetical { page-break-before: avoid; }
-        .character + .dialogue { page-break-before: avoid; }
+        .character + .parenthetical { page-break-before: avoid; margin-top: 0; }
+        .character + .dialogue { page-break-before: avoid; margin-top: 0; }
         .parenthetical + .dialogue { margin-top: 0; page-break-before: avoid; }
         @media print {
             html { background: white; }
@@ -69,7 +69,7 @@
                 margin-left: 0;
                 text-align: center;
                 margin-top: 1.2em;
-                margin-bottom: 0.3em;
+                margin-bottom: 0;
             }
             .dialogue {
                 margin-left: 0;
@@ -80,7 +80,7 @@
                 margin-left: 2em;
                 margin-right: 2em;
                 text-align: center;
-                margin-bottom: 0.3em;
+                margin-bottom: 0;
             }
         }
     </style>
